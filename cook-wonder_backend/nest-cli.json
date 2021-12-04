@@ -1,0 +1,4 @@
+git commit -m "first commit"{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src"
+}
