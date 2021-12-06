@@ -63,6 +63,7 @@ export default {
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 578px, 0% 750px);
   z-index: 2;
+  user-select: none;
 
   &__cat {
     z-index: 2;
@@ -106,6 +107,7 @@ export default {
     display: flex;
     top: 13px;
     left: 32px;
+    user-select: none;
 
     &-text {
       text-transform: uppercase;
@@ -185,6 +187,7 @@ export default {
     top: 200px;
     left: 55px;
     transform: rotate(-15deg);
+    user-select: text;
 
     &-lower {
       display: flex;
@@ -270,6 +273,7 @@ export default {
     font-size: 21px;
     line-height: 25px;
     margin-top: 25px;
+    color: #fff9f9;
   }
 
 }

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/nuxt.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="deploy" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cook-wonder_frontend/package.json" />
       <command value="run" />
@@ -66,8 +69,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.dev" />
       <item itemvalue="npm.deploy" />
+      <item itemvalue="npm.dev" />
       <item itemvalue="npm.generate" />
     </list>
   </component>
@@ -81,7 +84,9 @@
       <updated>1638645075793</updated>
       <workItem from="1638645077506" duration="4614000" />
       <workItem from="1638650781357" duration="60000" />
-      <workItem from="1638650862930" duration="466000" />
+      <workItem from="1638650862930" duration="686000" />
+      <workItem from="1638816797203" duration="232000" />
+      <workItem from="1638817704160" duration="5643000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -97,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638650323443</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ss">
+      <created>1638651405150</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638651405150</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Внесены правки на странице guide в первом разделе" />
     <MESSAGE value="Вн" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вн" />
+    <MESSAGE value="ss" />
+    <option name="LAST_COMMIT_MESSAGE" value="ss" />
   </component>
 </project>

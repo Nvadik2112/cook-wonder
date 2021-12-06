@@ -1,7 +1,5 @@
 <template>
   <section class="guide-content">
-    <div class="guide-content__border">
-    </div>
     <div class="guide-content__main row">
       <div class="guide-content__mask col-6">
         <div class="guide-content__round"></div>
@@ -24,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="guide-content__question">а, что внутри <span>?</span></div>
+    <div class="guide-content__question">что внутри</div>
     <div class="guide-content__footer">
       <div class="guide-content__footer-title">можно узнать уже сегодня</div>
       <div class="guide-content__comma">“</div>
@@ -57,17 +55,6 @@ export default {
   color: white;
   margin-top: -176px;
   position: relative;
-
-  &__border {
-    background-image: linear-gradient(to bottom right, transparent 49%, #FED240, transparent 50.5%);
-    background-repeat: no-repeat;
-    position: absolute;
-    box-sizing: content-box;
-    width: 100%;
-    height: 178px;
-    overflow: hidden;
-    z-index: 2;
-  }
 
   &__main {
     padding: 0;
@@ -104,23 +91,23 @@ export default {
     width: 185px;
     height: 185px;
     border-radius: 93px;
-    background-color: #FED23F;
-    top: 580px;
-    left: 308px;
+    background-color: #FBB900;
+    top: 550px;
+    left: 370px;
     display: flex;
     flex-direction: column;
-    padding-top: 69px;
+    padding-top: 80px;
     align-items: center;
     flex-wrap: wrap;
     font: {
       family: 'Montserrat', sans-serif;
       weight: 700;
-      size: 15px;
+      size: 20px;
     }
-    line-height: 18.3px;
+    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
-    transform: rotate(-10.38deg);
+    transform: rotate(7.45deg);
     z-index: 2;
 
     & span {
@@ -151,8 +138,9 @@ export default {
   }
 
   &__right {
-    margin-top: 150px;
+    margin-top: 140px;
     height: fit-content;
+    padding: 0 0 0 30px;
   }
 
   &__title {
@@ -185,29 +173,28 @@ export default {
     }
     text-transform: uppercase;
     line-height: 28px;
-    top: 0;
-    left: -4px;
+    top: 20px;
+    left: -60px;
     color: white;
     padding-right: 60px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #FED240;
     transform: rotate(9.5deg)
   }
 
   &__comma {
     position: absolute;
-    top: 0;
-    left: 112px;
+    top: -20px;
+    left: 330px;
     color: white;
     font: {
       weight: 700;
-      size: 300px;
+      size: 239px;
       family: 'Ruda', sans-serif;
     }
-    line-height: 380px;
+    line-height: 303px;
     height: 151px;
     width: 167px;
-    transform: rotate(-21.44deg);
+    transform: rotate(-20.44deg);
     z-index: 5;
   }
 
