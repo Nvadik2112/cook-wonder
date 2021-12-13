@@ -1,11 +1,10 @@
 <template>
   <div class="guide">
     <div class="guide-container">
-
-
       <GuideHeader></GuideHeader>
       <GuideContent></GuideContent>
       <Carousel></Carousel>
+      <Products></Products>
     </div>
   </div>
 </template>
@@ -16,9 +15,10 @@ import GuideHeader from "../components/Guide/containers/GuideHeader";
 import Properties from "../components/Guide/containers/Properties";
 import GuideContent from "../components/Guide/containers/GuideContent";
 import Carousel from "../components/Guide/containers/Carousel";
+import Products from "../components/Guide/containers/Products";
 export default {
   name: "guide",
-  components: {SvgStore,Carousel, Properties, GuideHeader, GuideContent}
+  components: {Products, SvgStore,Carousel, Properties, GuideHeader, GuideContent}
 }
 </script>
 

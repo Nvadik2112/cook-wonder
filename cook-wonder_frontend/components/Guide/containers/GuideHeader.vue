@@ -272,7 +272,7 @@ export default {
   &__buy {
     font-size: 21px;
     line-height: 25px;
-    margin-top: 25px;
+    margin-top: 18px;
     color: #fff9f9;
   }
 

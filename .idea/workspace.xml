@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/assets/global-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/assets/global-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Shape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Shape.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +95,8 @@
       <workItem from="1638650781357" duration="60000" />
       <workItem from="1638650862930" duration="686000" />
       <workItem from="1638816797203" duration="232000" />
-      <workItem from="1638817704160" duration="5643000" />
+      <workItem from="1638817704160" duration="6037000" />
+      <workItem from="1639417864691" duration="9729000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -109,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638651405150</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Переделана страница О чем руководство и слайдер">
+      <created>1638823569603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638823569603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +160,7 @@
     <MESSAGE value="Внесены правки на странице guide в первом разделе" />
     <MESSAGE value="Вн" />
     <MESSAGE value="ss" />
-    <option name="LAST_COMMIT_MESSAGE" value="ss" />
+    <MESSAGE value="Переделана страница О чем руководство и слайдер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переделана страница О чем руководство и слайдер" />
   </component>
 </project>

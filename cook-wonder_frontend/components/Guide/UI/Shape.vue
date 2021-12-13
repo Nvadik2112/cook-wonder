@@ -21,9 +21,8 @@ export default {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0);
-  background-size: cover;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='76' height='46' viewBox='0 0 76 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M76 0L0 20.1837V46H76V0Z' fill='%230D0000'/%3e%3c/svg%3e ");
+  background: black;
+  clip-path: polygon(0 42%, 100% 0, 100% 100%, 0% 100%);
   user-select: none;
   position: relative;
 

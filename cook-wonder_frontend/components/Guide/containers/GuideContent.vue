@@ -22,10 +22,12 @@
         </div>
       </div>
     </div>
-    <div class="guide-content__question">что внутри</div>
+    <div class="guide-content__question">
+      <p>что внутри</p><span>?</span>
+    </div>
     <div class="guide-content__footer">
       <div class="guide-content__footer-title">можно узнать уже сегодня</div>
-      <div class="guide-content__comma">“</div>
+<!--      <div class="guide-content__comma">“</div>-->
     </div>
   </section>
 </template>
@@ -99,22 +101,31 @@ export default {
     padding-top: 80px;
     align-items: center;
     flex-wrap: wrap;
-    font: {
-      family: 'Montserrat', sans-serif;
-      weight: 700;
-      size: 20px;
-    }
-    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
     transform: rotate(7.45deg);
     z-index: 2;
 
-    & span {
+    & p {
       font: {
-        size: 50px
+        family: 'Montserrat', sans-serif;
+        weight: 700;
+        size: 20px;
       }
-      line-height: 61px;
+      line-height: 24px;
+    }
+
+    & span {
+      position: absolute;
+      top: -5px;
+      right: -50px;
+      font: {
+        family: 'Ruda', sans-serif;
+        size: 199px;
+        weight: 700
+      }
+      transform: rotate(20deg);
+      line-height: 252px;
     }
   }
 
@@ -173,7 +184,7 @@ export default {
     }
     text-transform: uppercase;
     line-height: 28px;
-    top: 20px;
+    top: 30px;
     left: -60px;
     color: white;
     padding-right: 60px;
