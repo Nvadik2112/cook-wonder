@@ -4,13 +4,17 @@
       <div class="slider__pic slider__pic--side" :style="{backgroundImage: `url(${list[prevKey].url})`}"></div>
       <button @click="clickPrev" class="slider__arrow slider__arrow--prev">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301 0.46875 15.0312C0.46875 23.3324 7.19885 30.0625 15.5 30.0625C23.8012 30.0625 30.5312 23.3324 30.5312 15.0312ZM12.3203 7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
+          <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301 0.46875 15.0312C0.46875
+          23.3324 7.19885 30.0625 15.5 30.0625C23.8012 30.0625 30.5312 23.3324 30.5312 15.0312ZM12.3203
+          7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
         </svg>
       </button>
       <div class="slider__pic slider__pic--center" :style="{backgroundImage: `url(${list[key].url})`}"></div>
       <button @click="clickNext" class="slider__arrow slider__arrow--next">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="white" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301 0.46875 15.0312C0.46875 23.3324 7.19885 30.0625 15.5 30.0625C23.8012 30.0625 30.5312 23.3324 30.5312 15.0312ZM12.3203 7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
+          <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301
+           0.46875 15.0312C0.46875 23.3324 7.19885 30.0625 15.5 30.0625C23.8012 30.0625 30.5312
+           23.3324 30.5312 15.0312ZM12.3203 7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
         </svg>
       </button>
       <div class="slider__pic slider__pic--side" :style="{backgroundImage: `url(${list[nextKey].url})`}"></div>
@@ -68,6 +72,8 @@ export default {
   align-items: center;
 
   &__pic {
+    opacity: 1;
+    visibility: visible;
 
     &--side {
       width: 239px;
@@ -81,6 +87,7 @@ export default {
       width: 367px;
       height: 619px;
       background-size: 367px 619px;
+      //transition: visibility 0ms, opacity 0.2ms ease-in-out;
       transition: background-image 0.5s cubic-bezier(0, 0, 0.7, 1);
     }
   }
