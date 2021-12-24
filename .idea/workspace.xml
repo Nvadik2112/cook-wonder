@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/products/products1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/products/products2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/products/products3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/products/products4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/products/products5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Menu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,8 @@
       <workItem from="1638816797203" duration="232000" />
       <workItem from="1638817704160" duration="6037000" />
       <workItem from="1639417864691" duration="10054000" />
-      <workItem from="1639931853627" duration="2208000" />
+      <workItem from="1639931853627" duration="2881000" />
+      <workItem from="1640370664730" duration="10588000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -140,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639428330590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлены картинки в раздел products">
+      <created>1639934181448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639934181448</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +182,7 @@
     <MESSAGE value="ss" />
     <MESSAGE value="Переделана страница О чем руководство и слайдер" />
     <MESSAGE value="Сделан шаблон раздела Products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделан шаблон раздела Products" />
+    <MESSAGE value="Добавлены картинки в раздел products" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены картинки в раздел products" />
   </component>
 </project>

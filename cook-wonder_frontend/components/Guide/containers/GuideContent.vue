@@ -40,10 +40,14 @@ export default {
   data() {
     return {
       contents: [
-        {title: 'Роль и важность маринадов', text: 'Разберем какие маринады подходят к тому или иному виду мяса'},
-        {title: 'Секреты приготовления идеального шашлыка', text: 'Разберем ошибки, совершаемые даже профессиональными поварами'},
-        {title: 'схема разруба', text: 'Разберем виды вырезок, а также наиболее подходящие из них для шашлыка'},
-        {title: 'Пошаговые рецепты шашлыков и маринадов', text: 'В руководство включены классические и авторские рецепты'},
+        {title: 'Роль и важность маринадов',
+          text: 'Разберем какие маринады подходят к тому или иному виду мяса'},
+        {title: 'Секреты приготовления идеального шашлыка',
+          text: 'Разберем ошибки, совершаемые даже профессиональными поварами'},
+        {title: 'схема разруба',
+          text: 'Разберем виды вырезок, а также наиболее подходящие из них для шашлыка'},
+        {title: 'Пошаговые рецепты шашлыков и маринадов',
+          text: 'В руководство включены классические и авторские рецепты'},
       ]
     }
   }
@@ -61,9 +65,9 @@ export default {
   &__main {
     padding: 0;
     margin: 0;
-    height: 740px;
+    height: 750px;
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
     z-index: 1;
   }
 
@@ -94,7 +98,7 @@ export default {
     height: 185px;
     border-radius: 93px;
     background-color: #FBB900;
-    top: 550px;
+    top: 520px;
     left: 370px;
     display: flex;
     flex-direction: column;
@@ -134,7 +138,7 @@ export default {
     width: 172px;
     height: 310px;
     transform: matrix(0.99, 0.11, -0.1, 0.99, 0, 0);
-    top: 74px;
+    top: 64px;
     right: -15px;
 
   }
@@ -144,7 +148,7 @@ export default {
     width: 185px;
     height: 332px;
     transform: matrix(0.95, -0.32, 0.31, 0.95, 0, 0);
-    top: 119px;
+    top: 109px;
     left: 15px;
   }
 
@@ -166,7 +170,7 @@ export default {
   &__footer {
     box-sizing: content-box;
     padding-top: 0;
-    margin-top: -100px;
+    margin-top: -110px;
     width: 100%;
     height: 193px;
     position: relative;
@@ -180,16 +184,17 @@ export default {
     justify-content: flex-end;
     font: {
       size: 25px;
-      weight: 700;
+      weight: 600;
     }
     text-transform: uppercase;
-    line-height: 28px;
+    line-height: 50px;
     top: 30px;
-    left: -60px;
+    left: 0;
     color: white;
-    padding-right: 60px;
+    padding-right: 110px;
     padding-bottom: 10px;
-    transform: rotate(9.5deg)
+    transform: rotate(9.5deg);
+    border-top: 2px solid #FED240;
   }
 
   &__comma {

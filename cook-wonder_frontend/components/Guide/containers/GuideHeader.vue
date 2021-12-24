@@ -128,6 +128,7 @@ export default {
     position: absolute;
     top: 22px;
     left: 175px;
+    color: black
   }
 
   &__mask {

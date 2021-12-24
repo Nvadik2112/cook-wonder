@@ -38,7 +38,6 @@ export default {
       family: 'Montserrat', sans-serif;
     }
     line-height: 17px;
-    color: #000000;
 
     &:hover {
       text-decoration: underline;
