@@ -10,7 +10,6 @@
       <div class="products__container col-12">
         <div class="products__pic" v-for="(item, key) in list">
          <div class="products__img" :style="{backgroundImage: `url(${item.url})`}">
-<!--            <div class="products__img" style="background-image: url('/products/products_(1).png')">-->
             <Shape class="products__img-title">
               <h3 v-html="item.title"></h3>
             </Shape>
@@ -84,8 +83,6 @@ export default {
         color: #FFFFFF;
       }
     }
-
-
   }
 
   &__main {

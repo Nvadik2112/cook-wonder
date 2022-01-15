@@ -32,7 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .properties {
   width: 100%;
   color: white;

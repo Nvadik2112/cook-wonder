@@ -8,8 +8,8 @@
 export default {
   name: "Shape",
   props: {
-    width: String,
-    height: String
+    width: {},
+    height: {}
   }
 
 }

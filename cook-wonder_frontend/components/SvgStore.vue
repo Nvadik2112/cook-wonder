@@ -8,7 +8,6 @@ export default {
   name: "SvgStore",
   props: {
     name: {
-      type: String,
       default: 'main-header-mask'
     }
   },

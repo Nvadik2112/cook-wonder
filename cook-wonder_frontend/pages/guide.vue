@@ -2,10 +2,10 @@
   <div class="guide">
     <div class="guide-container">
       <GuideHeader></GuideHeader>
-      <GuideContent></GuideContent>
+      <GuideContent id="guide-content"></GuideContent>
       <Carousel></Carousel>
       <Products></Products>
-      <GuideFooter></GuideFooter>
+      <GuideFooter id="guide-footer"></GuideFooter>
     </div>
   </div>
 </template>
@@ -20,7 +20,33 @@ import Carousel from "../components/Guide/containers/Carousel";
 import Products from "../components/Guide/containers/Products";
 export default {
   name: "guide",
-  components: {Products, SvgStore,Carousel, Properties, GuideHeader, GuideContent, GuideFooter}
+  components: {Products, SvgStore,Carousel, Properties, GuideHeader, GuideContent, GuideFooter},
+  methods: {
+    scroll(e) {
+      if (e.target.closest('a[href^="#"]')) {
+        e.preventDefault();
+
+        let href = e.target.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + 120;
+
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  },
+  mounted() {
+    document.addEventListener('click', this.scroll)
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', this.scroll)
+  }
+
 }
 </script>
 
@@ -38,7 +64,6 @@ export default {
     flex-direction: column;
     align-items: center;
     position: relative;
-
   }
 }
 

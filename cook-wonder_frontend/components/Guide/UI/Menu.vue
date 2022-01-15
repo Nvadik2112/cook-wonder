@@ -1,7 +1,9 @@
 <template>
-  <div class="menu">
-    <div v-for="item in menu" class="menu__item">{{item.name}}</div>
-  </div>
+  <ul class="menu">
+    <li v-for="item in menu" class="menu__item">
+      <a :href="item.href">{{item.name}}</a>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -10,10 +12,9 @@ export default {
   data() {
     return {
       menu: [
-        {name: 'Обо мне'},
-        {name: "О чем руководство"},
-        {name: "Заказать"},
-        {name: 'Контакты'}
+        {name: 'Обо мне', href: '/'},
+        {name: "О чем руководство", href: '#guide-content'},
+        {name: "Купить", href: '#guide-footer'},
       ]
     }
   }
@@ -23,14 +24,16 @@ export default {
 <style lang="scss" scoped>
 
 .menu {
+  margin: 0;
   padding-right: 0;
   display: flex;
-  width: 445px;
+  width: 345px;
   justify-content: space-between;
   z-index: 3;
 
 
   &__item {
+    list-style-type: none;
     cursor: pointer;
     font: {
       weight: 400;
@@ -38,6 +41,10 @@ export default {
       family: 'Montserrat', sans-serif;
     }
     line-height: 17px;
+
+    & a {
+      color: inherit
+    }
 
     &:hover {
       text-decoration: underline;
