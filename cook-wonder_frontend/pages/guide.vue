@@ -46,7 +46,6 @@ export default {
   beforeDestroy() {
     document.removeEventListener('click', this.scroll)
   }
-
 }
 </script>
 
