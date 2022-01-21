@@ -36,7 +36,6 @@ export default {
   height: 488px;
   width: 100%;
 
-
   &__logo {
     position: absolute;
     top: 2px;

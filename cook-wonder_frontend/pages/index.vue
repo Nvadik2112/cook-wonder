@@ -16,6 +16,7 @@ export default {
 }
 </script>
 
+
 <style lang="scss" scoped>
 .main {
   background-color: #0C0F14;

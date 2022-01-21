@@ -31,6 +31,9 @@ export default {
   justify-content: space-between;
   z-index: 3;
 
+  @media #{$mobile} {
+    display: none;
+  }
 
   &__item {
     list-style-type: none;
