@@ -4,13 +4,13 @@
       <div class="guide-content__mask col-6">
         <div class="guide-content__round"></div>
       </div>
-      <div class="col-1"></div>
-      <div class="guide-content__left col-3">
+      <div class="guide-content__empty col-lg-1"></div>
+      <div class="guide-content__left col-lg-3">
         <img class="guide-content__content" src="content.png" alt="content" draggable="false">
         <img class="guide-content__cover" src="cover.png" alt="cover" draggable="false">
       </div>
-      <div class="col-2"></div>
-      <div class="guide-content__right col-6">
+      <div class="guide-content__empty col-lg-3 col-xl-2"></div>
+      <div class="guide-content__right col-12 col-lg-5 col-xl-6">
         <h3 class="guide-content__title">о чем руководство</h3>
         <div class="content-list">
           <div class="content-list__item" v-for="item in contents">
@@ -62,6 +62,18 @@ export default {
   margin-top: -176px;
   position: relative;
 
+  @media #{$mobile} {
+    margin-top: 0;
+    background-color: white;
+    color: black;
+  }
+
+  &__empty {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
   &__main {
     padding: 0;
     margin: 0;
@@ -69,17 +81,31 @@ export default {
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
     z-index: 1;
+
+    @media #{$mobile} {
+      height: 270px;
+      clip-path: initial;
+    }
   }
 
   &__left {
     margin-top: 140px;
     position: relative;
     height: fit-content;
+
+    @media #{$mobile} {
+      display: none;
+    }
+
   }
 
   &__mask {
     position: absolute;
     height: 572px;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 
   &__round {
@@ -110,6 +136,15 @@ export default {
     transform: rotate(7.45deg);
     z-index: 2;
 
+    @media #{$mobile} {
+      top: 245px;
+      left: 200px;
+      width: 76px;
+      height: 76px;
+      padding-top: 35px;
+      transform: rotate(15deg);
+    }
+
     & p {
       font: {
         family: 'Montserrat', sans-serif;
@@ -117,6 +152,13 @@ export default {
         size: 20px;
       }
       line-height: 24px;
+
+      @media #{$mobile} {
+        font-size: 10px;
+        line-height: 12px;
+        color: white;
+        z-index: 3;
+      }
     }
 
     & span {
@@ -130,6 +172,13 @@ export default {
       }
       transform: rotate(20deg);
       line-height: 252px;
+
+      @media #{$mobile} {
+        font-size: 72px;
+        line-height: 88px;
+        right: 2px;
+        transform: rotate(2deg);
+      }
     }
   }
 
@@ -156,6 +205,14 @@ export default {
     margin-top: 140px;
     height: fit-content;
     padding: 0 0 0 30px;
+
+    @media #{$mobile} {
+      margin-top: 27px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -165,6 +222,12 @@ export default {
     };
     text-transform: uppercase;
     line-height: 35px;
+
+    @media #{$mobile} {
+      font-size: 18px;
+      line-height: 21px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
   }
 
   &__footer {
@@ -175,6 +238,10 @@ export default {
     height: 193px;
     position: relative;
     overflow: hidden;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 
   &__footer-title {
@@ -224,6 +291,12 @@ export default {
   grid-row-gap: 146px;
   margin-top: 62px;
 
+  @media #{$mobile} {
+    margin-top: 28px;
+    grid-column-gap: 18px;
+    grid-row-gap: 29px;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -231,6 +304,11 @@ export default {
     align-items: flex-start;
     height: 96px;
     width: 100%;
+
+    @media #{$mobile} {
+      align-items: center;
+      height: 61px;
+    }
   }
 
   &__text {
@@ -241,6 +319,12 @@ export default {
     }
     line-height: 17px;
 
+    @media #{$mobile} {
+      text-align: center;
+      font-size: 9px;
+      font-weight: 400;
+      line-height: 10px;
+    }
 
     &--title {
       text-transform: uppercase;

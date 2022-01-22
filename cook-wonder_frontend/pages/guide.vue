@@ -2,7 +2,7 @@
   <div class="guide">
     <div class="guide-container">
       <GuideHeader></GuideHeader>
-      <GuideContent  style="display: none" id="guide-content"></GuideContent>
+      <GuideContent id="guide-content"></GuideContent>
       <Carousel style="display: none"></Carousel>
       <Products style="display: none"></Products>
       <GuideFooter style="display: none" id="guide-footer"></GuideFooter>
@@ -63,6 +63,7 @@ export default {
   &-container {
     max-width: 1110px;
     width: 100%;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
