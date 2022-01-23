@@ -8,8 +8,8 @@
 export default {
   name: "Shape",
   props: {
-    width: {},
-    height: {}
+    width: '',
+    height: ''
   }
 
 }

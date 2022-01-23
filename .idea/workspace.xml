@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Начало выполнения мобильной версии">
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Адаптированы GuideHeader.vue и GuideContent.vue">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/assets/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/assets/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Shape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Shape.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Main/containers/MainHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Main/containers/MainHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +23,7 @@
       <list>
         <option value="Vue Single File Component" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -121,7 +127,8 @@
       <workItem from="1642256277891" duration="193000" />
       <workItem from="1642264683225" duration="16447000" />
       <workItem from="1642785480749" duration="10425000" />
-      <workItem from="1642861500663" duration="20131000" />
+      <workItem from="1642861500663" duration="20412000" />
+      <workItem from="1642946392469" duration="15613000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -179,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642796189011</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Адаптированы GuideHeader.vue и GuideContent.vue">
+      <created>1642886547375</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642886547375</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +232,8 @@
     <MESSAGE value="Добавлены картинки в раздел products" />
     <MESSAGE value="Выполнена верстка страницы Guide (десктоп версия)" />
     <MESSAGE value="Начало выполнения мобильной версии" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало выполнения мобильной версии" />
+    <MESSAGE value="Адаптированы GuideHeader.vue и GuideContent.vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Адаптированы GuideHeader.vue и GuideContent.vue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -39,7 +39,6 @@ import Shape from "../../../components/Guide/UI/Shape"
 export default {
   name: "GuideFooter",
   components: {SvgStore, Menu, Shape},
-
 }
 </script>
 

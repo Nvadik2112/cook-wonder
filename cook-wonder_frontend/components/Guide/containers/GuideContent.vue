@@ -1,15 +1,15 @@
 <template>
   <section class="guide-content">
     <div class="guide-content__main row">
-      <div class="guide-content__mask col-6">
+      <div v-if="!isMobile" class="guide-content__mask col-6">
         <div class="guide-content__round"></div>
       </div>
-      <div class="guide-content__empty col-lg-1"></div>
-      <div class="guide-content__left col-lg-3">
+      <div v-if="!isMobile" class="guide-content__empty col-lg-1"></div>
+      <div v-if="!isMobile" class="guide-content__left col-lg-3">
         <img class="guide-content__content" src="content.png" alt="content" draggable="false">
         <img class="guide-content__cover" src="cover.png" alt="cover" draggable="false">
       </div>
-      <div class="guide-content__empty col-lg-3 col-xl-2"></div>
+      <div v-if="!isMobile" class="guide-content__empty col-lg-3 col-xl-2"></div>
       <div class="guide-content__right col-12 col-lg-5 col-xl-6">
         <h3 class="guide-content__title">о чем руководство</h3>
         <div class="content-list">
@@ -25,7 +25,7 @@
     <div class="guide-content__question">
       <p>что внутри</p><span>?</span>
     </div>
-    <div class="guide-content__footer">
+    <div v-if="!isMobile" class="guide-content__footer">
       <div class="guide-content__footer-title">можно узнать уже сегодня</div>
 <!--      <div class="guide-content__comma">“</div>-->
     </div>
@@ -37,6 +37,9 @@ import SvgStore from "../../SvgStore";
 export default {
   name: "Content",
   components: {SvgStore},
+  props: {
+    isMobile: Boolean
+  },
   data() {
     return {
       contents: [
@@ -50,7 +53,7 @@ export default {
           text: 'В руководство включены классические и авторские рецепты'},
       ]
     }
-  }
+  },
 }
 </script>
 
@@ -68,12 +71,6 @@ export default {
     color: black;
   }
 
-  &__empty {
-    @media #{$mobile} {
-      display: none;
-    }
-  }
-
   &__main {
     padding: 0;
     margin: 0;
@@ -83,7 +80,7 @@ export default {
     z-index: 1;
 
     @media #{$mobile} {
-      height: 270px;
+      height: 245px;
       clip-path: initial;
     }
   }
@@ -92,20 +89,11 @@ export default {
     margin-top: 140px;
     position: relative;
     height: fit-content;
-
-    @media #{$mobile} {
-      display: none;
-    }
-
   }
 
   &__mask {
     position: absolute;
     height: 572px;
-
-    @media #{$mobile} {
-      display: none;
-    }
   }
 
   &__round {
@@ -138,7 +126,7 @@ export default {
 
     @media #{$mobile} {
       top: 245px;
-      left: 200px;
+      left: 215px;
       width: 76px;
       height: 76px;
       padding-top: 35px;
@@ -189,7 +177,6 @@ export default {
     transform: matrix(0.99, 0.11, -0.1, 0.99, 0, 0);
     top: 64px;
     right: -15px;
-
   }
 
   &__content {
@@ -238,10 +225,6 @@ export default {
     height: 193px;
     position: relative;
     overflow: hidden;
-
-    @media #{$mobile} {
-      display: none;
-    }
   }
 
   &__footer-title {

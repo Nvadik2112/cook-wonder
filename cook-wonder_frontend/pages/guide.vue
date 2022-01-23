@@ -1,10 +1,10 @@
 <template>
   <div class="guide">
     <div class="guide-container">
-      <GuideHeader></GuideHeader>
-      <GuideContent id="guide-content"></GuideContent>
-      <Carousel style="display: none"></Carousel>
-      <Products style="display: none"></Products>
+      <GuideHeader :is-mobile="isMobile"></GuideHeader>
+      <GuideContent :is-mobile="isMobile" id="guide-content"></GuideContent>
+      <Carousel :is-mobile="isMobile"></Carousel>
+      <Products :is-mobile="isMobile"></Products>
       <GuideFooter style="display: none" id="guide-footer"></GuideFooter>
     </div>
   </div>
@@ -23,6 +23,11 @@ export default {
 
   name: "guide",
   components: {Products, SvgStore,Carousel, Properties, GuideHeader, GuideContent, GuideFooter},
+  data() {
+    return {
+      isMobile: false
+    }
+  },
   methods: {
     scroll(e) {
       if (e.target.closest('a[href^="#"]')) {
@@ -37,13 +42,19 @@ export default {
           behavior: 'smooth'
         });
       }
+    },
+    setIsMobile() {
+      this.isMobile = window.innerWidth < 990;
     }
   },
   mounted() {
+    this.setIsMobile()
     document.addEventListener('click', this.scroll)
+    window.addEventListener('resize', this.setIsMobile)
   },
   beforeDestroy() {
     document.removeEventListener('click', this.scroll)
+    window.removeEventListener('resize', this.setIsMobile)
   }
 }
 </script>

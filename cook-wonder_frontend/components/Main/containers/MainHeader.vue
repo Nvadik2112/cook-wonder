@@ -1,22 +1,21 @@
 <template>
   <header class="main-header">
-    <svg-store name="main-logo" class="main-header__logo"></svg-store>
+    <SvgStore name="main-logo" class="main-header__logo"></SvgStore>
     <svg-store name="main-header-mask" class="main-header__mask"></svg-store>
       <div class="main-header__container col-7">
         <h3 class="main-header__subtitle">Ваш кулинарный гид</h3>
         <h3 class="main-header__title">РОмАН ВЕТРОВ</h3>
         <div class="achievements">
-
         </div>
       </div>
   </header>
 </template>
 
 <script>
-import svgStore from '../../SvgStore'
+import SvgStore from '../../SvgStore'
 export default {
   name: "Header",
-  components: [svgStore],
+  components: {SvgStore},
   data() {
     return {
       achievements: [
