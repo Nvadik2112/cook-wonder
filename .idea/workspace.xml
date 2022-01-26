@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Адаптированы GuideHeader.vue и GuideContent.vue">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/store/store.js" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Адаптированы Слайдер и частично страница продуктов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Shape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Shape.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Main/containers/MainHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Main/containers/MainHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +120,8 @@
       <workItem from="1642264683225" duration="16447000" />
       <workItem from="1642785480749" duration="10425000" />
       <workItem from="1642861500663" duration="20412000" />
-      <workItem from="1642946392469" duration="15613000" />
+      <workItem from="1642946392469" duration="15842000" />
+      <workItem from="1643216931256" duration="6216000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -193,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642886547375</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Адаптированы Слайдер и частично страница продуктов">
+      <created>1642964434540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642964434540</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +233,8 @@
     <MESSAGE value="Выполнена верстка страницы Guide (десктоп версия)" />
     <MESSAGE value="Начало выполнения мобильной версии" />
     <MESSAGE value="Адаптированы GuideHeader.vue и GuideContent.vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Адаптированы GuideHeader.vue и GuideContent.vue" />
+    <MESSAGE value="Адаптированы Слайдер и частично страница продуктов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Адаптированы Слайдер и частично страница продуктов" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
