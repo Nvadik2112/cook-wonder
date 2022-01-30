@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Адаптирована страница продуктов">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/assets/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/assets/variables.scss" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Закончено выполнение адаптива guide">
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +121,7 @@
       <workItem from="1642861500663" duration="20412000" />
       <workItem from="1642946392469" duration="15842000" />
       <workItem from="1643216931256" duration="6251000" />
-      <workItem from="1643544243559" duration="16413000" />
+      <workItem from="1643544243559" duration="16841000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -207,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643223217972</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Закончено выполнение адаптива guide">
+      <created>1643561827441</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643561827441</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +249,8 @@
     <MESSAGE value="Адаптированы GuideHeader.vue и GuideContent.vue" />
     <MESSAGE value="Адаптированы Слайдер и частично страница продуктов" />
     <MESSAGE value="Адаптирована страница продуктов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Адаптирована страница продуктов" />
+    <MESSAGE value="Закончено выполнение адаптива guide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Закончено выполнение адаптива guide" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

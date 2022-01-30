@@ -127,6 +127,7 @@ export default {
   &__pic {
     opacity: 1;
     visibility: visible;
+    background-color: gray;
 
     &--side {
       width: 239px;
