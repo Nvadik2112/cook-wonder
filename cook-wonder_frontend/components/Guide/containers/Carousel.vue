@@ -39,6 +39,7 @@ export default {
       key: 1,
       nextKey: 2,
       opacity: 0.1,
+      y: null,
       list: [
         {url: 'guide/pic1.png'},
         {url: 'guide/pic2.png'},
@@ -53,19 +54,24 @@ export default {
       if (touchEvent.changedTouches.length !== 1) {
         return;
       }
+      this.y = touchEvent.touches[0].clientY
+
       const posXStart = touchEvent.changedTouches[0].clientX;
-      addEventListener('touchend', (touchEvent) => this.touchEnd(touchEvent, posXStart),
+      addEventListener('touchmove', (touchEvent) => this.touchMove(touchEvent, posXStart),
         {once: true});
     },
-    touchEnd (touchEvent, posXStart) {
+
+    touchMove (touchEvent, posXStart) {
       if (touchEvent.changedTouches.length !== 1) {
         return;
       }
-      const posXEnd = touchEvent.changedTouches[0].clientX;
-      if (posXStart < posXEnd) {
-        this.clickPrev(); // swipe right
-      } else if (posXStart > posXEnd) {
-        this.clickNext(); // swipe left
+      if (Math.abs(this.y - touchEvent.touches[0].clientY) < 5) {
+        const posXEnd = touchEvent.changedTouches[0].clientX;
+        if (posXStart < posXEnd) {
+          this.clickPrev(); // swipe right
+        } else if (posXStart > posXEnd) {
+          this.clickNext(); // swipe left
+        }
       }
     },
 
