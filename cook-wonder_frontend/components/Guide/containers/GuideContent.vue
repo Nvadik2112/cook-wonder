@@ -125,7 +125,7 @@ export default {
     z-index: 2;
 
     @media #{$mobile} {
-      top: 245px;
+      top: 255px;
       left: 215px;
       width: 76px;
       height: 76px;

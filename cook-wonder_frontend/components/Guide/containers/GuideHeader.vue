@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="guide-header__phone">
-      <div v-if="isMobile" class="guide-header__iphone">
+      <div v-if="!isMobile" class="guide-header__iphone">
         <img src="phone.png" alt="iphone" draggable="false">
       </div>
     </div>
@@ -415,12 +415,15 @@ export default {
     }
 
     &:before {
-      position: absolute;
-      content: '';
-      background-color: #FBB900;
-      left: -30%;
-      width: 140%;
-      height: 224px;
+      @media #{$mobile} {
+        position: absolute;
+        content: '';
+        background-color: #FBB900;
+        left: -30%;
+        width: 140%;
+        height: 224px;
+      }
+
     }
   }
 

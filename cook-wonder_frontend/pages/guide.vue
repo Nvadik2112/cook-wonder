@@ -5,7 +5,7 @@
       <GuideContent :is-mobile="isMobile" id="guide-content"></GuideContent>
       <Carousel :is-mobile="isMobile"></Carousel>
       <Products :is-mobile="isMobile"></Products>
-      <GuideFooter style="display: none" id="guide-footer"></GuideFooter>
+      <GuideFooter :is-mobile="isMobile" id="guide-footer"></GuideFooter>
     </div>
   </div>
 </template>
@@ -64,11 +64,12 @@ export default {
 .guide {
   background-color: #2C2720;
   width: 100%;
+  min-width: 320px;
   display: flex;
   justify-content: center;
 
   @media #{$mobile} {
-
+    overflow: hidden;
   }
 
   &-container {

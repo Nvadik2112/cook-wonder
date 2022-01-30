@@ -95,8 +95,7 @@ export default {
   @media #{$mobile} {
     background: white;
     position: relative;
-    overflow: hidden;
-    padding-bottom: 88px;
+    padding-bottom: 145px;
   }
 
   &:before {
@@ -104,11 +103,12 @@ export default {
       content: '';
       position: absolute;
       background-color: #2C2720;
-      top: -20px;
+      top: 35px;
       left: -30%;
-      width: 130%;
-      height: 555px;
-      clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+      width: 150%;
+      height: 490px;
+      transform: rotate(8deg);
+      //clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     }
   }
 }
@@ -121,7 +121,7 @@ export default {
 
   @media #{$mobile} {
     justify-content: center;
-    padding-top: 62px;
+    padding-top: 82px;
   }
 
   &__pic {
