@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Закончено выполнение адаптива guide">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +124,7 @@
       <workItem from="1642861500663" duration="20412000" />
       <workItem from="1642946392469" duration="15842000" />
       <workItem from="1643216931256" duration="6251000" />
-      <workItem from="1643544243559" duration="16841000" />
+      <workItem from="1643544243559" duration="19840000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>

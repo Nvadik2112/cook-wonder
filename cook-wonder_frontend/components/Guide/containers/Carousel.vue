@@ -1,9 +1,8 @@
 <template>
   <section class="carousel">
     <div class="slider">
-      <div v-if="!isMobile" class="slider__pic slider__pic--side"
-           :style="{backgroundImage: `url(${list[prevKey].url})`}">
-      </div>
+      <img v-if="!isMobile" class="slider__pic slider__pic--side"
+           :src="list[prevKey].url">
       <button v-if="!isMobile" @click="clickPrev" class="slider__arrow slider__arrow--prev">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301 0.46875 15.0312C0.46875
@@ -11,9 +10,8 @@
           7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
         </svg>
       </button>
-      <div class="slider__pic slider__pic--center" :style="{backgroundImage: `url(${list[key].url})`}"
+      <img ref="slide" class="slider__pic slider__pic--center" :src="list[key].url"
            @touchstart="touchStart">
-      </div>
       <button v-if="!isMobile" @click="clickNext" class="slider__arrow slider__arrow--next">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="white" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301
@@ -21,9 +19,8 @@
            23.3324 30.5312 15.0312ZM12.3203 7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
         </svg>
       </button>
-      <div v-if="!isMobile" class="slider__pic slider__pic--side"
-           :style="{backgroundImage: `url(${list[nextKey].url})`}">
-      </div>
+      <img v-if="!isMobile" class="slider__pic slider__pic--side"
+           :src="list[nextKey].url">
     </div>
   </section>
 </template>
@@ -41,6 +38,7 @@ export default {
       prevKey: 0,
       key: 1,
       nextKey: 2,
+      opacity: 0.1,
       list: [
         {url: 'guide/pic1.png'},
         {url: 'guide/pic2.png'},
@@ -72,14 +70,24 @@ export default {
     },
 
     clickNext() {
-      this.key = this.nextKey
-      this.prevKey === this.list.length - 1 ? this.prevKey = 0 : this.prevKey = this.prevKey + 1
-      this.nextKey === this.list.length - 1 ? this.nextKey = 0 : this.nextKey = this.nextKey + 1
+      this.$refs.slide.style.opacity = `0.3`
+      setTimeout(()=> {
+        this.key = this.nextKey
+          this.prevKey === this.list.length - 1 ? this.prevKey = 0 : this.prevKey = this.prevKey + 1
+          this.nextKey === this.list.length - 1 ? this.nextKey = 0 : this.nextKey = this.nextKey + 1
+          this.$refs.slide.removeAttribute('style')
+        },
+        400)
     },
+
     clickPrev() {
-      this.key = this.prevKey
-      this.nextKey === 0 ? this.nextKey = this.list.length - 1 : this.nextKey = this.nextKey - 1
-      this.prevKey === 0 ? this.prevKey = this.list.length - 1 : this.prevKey = this.prevKey - 1
+      this.$refs.slide.style.opacity = `0.3`
+      setTimeout(()=> {
+        this.key = this.prevKey
+        this.nextKey === 0 ? this.nextKey = this.list.length - 1 : this.nextKey = this.nextKey - 1
+        this.prevKey === 0 ? this.prevKey = this.list.length - 1 : this.prevKey = this.prevKey - 1
+        this.$refs.slide.removeAttribute('style')
+      }, 400)
     }
   }
 }
@@ -108,7 +116,6 @@ export default {
       width: 150%;
       height: 490px;
       transform: rotate(8deg);
-      //clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     }
   }
 }
@@ -141,7 +148,7 @@ export default {
       width: 367px;
       height: 619px;
       background-size: 367px 619px;
-      transition: background-image 0.5s cubic-bezier(0, 0, 0.7, 1);
+      transition: opacity 0.4s cubic-bezier(0, 0, 0.7, 1);
 
       @media #{$mobile} {
         margin-top: 20px;
