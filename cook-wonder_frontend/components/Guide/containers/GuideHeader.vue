@@ -1,33 +1,44 @@
 <template>
   <header class="guide-header row">
     <div class="guide-header__logo">
-      <img src="logo.png" alt="cat" style="width: 38px; height: 34px; margin-right: 4px">
+      <img src="logo.svg" alt="cat" style="width: 38px; height: 34px; margin-right: 4px; margin-bottom: 5px">
       <div class="guide-header__logo-text">cook <span>wonder</span></div>
     </div>
     <Menu class="guide-header__menu"></Menu>
-    <div class="guide-header__mask col-5">
-      <div v-if="!isMobile" class="guide-header__round"></div>
+    <div v-if="!isMobile" class="guide-header__mask col-5">
+      <div class="guide-header__round"></div>
     </div>
     <button class="guide-header__button">
       <Shape class="guide-header__button-shape">
-        <h3 class="guide-header__personal-text">Личный кабинет</h3>
+        <h3 class="guide-header__personal-text">Меню</h3>
       </Shape>
     </button>
     <div v-if="!isMobile" class="guide-header__paw"></div>
     <div class="guide-header__container">
       <span class="guide-header__title guide-header__title--upper">
-        Кулинарное руководство
+        {{!isMobile ? 'Кулинарное' : ''}} руководство
       </span>
       <div class="guide-header__container-lower">
         <div class="guide-header__slang">Это мощно. Это сочно. Это cookwonder</div>
         <span class="guide-header__title guide-header__title--pre">про</span>
         <span class="guide-header__title guide-header__title--main">шашлыки</span>
       </div>
-      <div v-if="isMobile" class="guide-header__mobile-container">
+      <div v-if="isMobile" class="guide-header__mobile-container" d>
         <div class="guide-header__mobile-pictures">
-            <img class="guide-header__content-mobile" src="content.png" alt="content-mobile" draggable="false">
-            <img class="guide-header__cover-mobile" src="cover.png" alt="cover-mobile" draggable="false">
-            <img class="guide-header__iphone-mobile" src="phone.png" alt="iphone-mobile" draggable="false">
+          <div class="guide-header__content-mobile">
+            <img src="content.png" alt="content-mobile" draggable="false">
+          </div>
+          <div class="guide-header__cover-mobile">
+            <img src="cover.png" alt="cover-mobile" draggable="false">
+          </div>
+          <div class="guide-header__iphone-mobile">
+            <img src="phone.png" alt="iphone-mobile" draggable="false">
+          </div>
+          <button class="guide-header__button guide-header__button--buy">
+            <Shape class="guide-header__button-shape guide-header__button-shape--buy">
+              <h3 class="guide-header__buy">Купить</h3>
+            </Shape>
+          </button>
         </div>
         <div class="guide-header__phrase guide-header__phrase--mobile">
           Эй, верни, воришка!
@@ -35,12 +46,12 @@
         <SvgStore class="guide-header__vector guide-header__vector--mobile" name="vector"></SvgStore>
       </div>
     </div>
-    <div class="guide-header__phone">
-      <div v-if="!isMobile" class="guide-header__iphone">
+    <div v-if="!isMobile" class="guide-header__phone">
+      <div class="guide-header__iphone">
         <img src="phone.png" alt="iphone" draggable="false">
       </div>
     </div>
-    <button class="guide-header__button guide-header__button--buy">
+    <button v-if="!isMobile" class="guide-header__button guide-header__button--buy">
       <Shape class="guide-header__button-shape guide-header__button-shape--buy">
         <h3 class="guide-header__buy">Купить</h3>
       </Shape>
@@ -81,7 +92,7 @@ export default {
   @media #{$mobile} {
     display: flex;
     align-items: flex-end;
-    height: 620px;
+    height: 750px;
     justify-content: center;
     clip-path: initial;
   }
@@ -250,8 +261,8 @@ export default {
       @media #{$mobile} {
         width: 70px;
         height: 50px;
-        top: 228px;
-        right: 31px;
+        top: 175px;
+        right: 51px;
       }
 
       & h3 {
@@ -279,6 +290,14 @@ export default {
     line-height: 12px;
     margin-top: 8px;
     margin-left: 1px;
+
+    @media #{$mobile} {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 
   &__paw {
@@ -296,7 +315,7 @@ export default {
     height: 103px;
     top: 200px;
     left: 55px;
-    transform: rotate(-15deg);
+    transform: rotate(-9deg);
     user-select: text;
 
     @media #{$mobile} {
@@ -306,7 +325,7 @@ export default {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      top: 120px;
+      top: 96px;
       left: 22px;
     }
 
@@ -315,8 +334,11 @@ export default {
       align-items: center;
 
       @media #{$mobile} {
-        width: 296px;
-        justify-content: space-between;
+        flex-direction: row;
+        min-width: 243px;
+        max-width: 243px;
+        flex-wrap: wrap;
+
       }
     }
   }
@@ -333,13 +355,14 @@ export default {
     text-transform: uppercase;
 
     @media #{$mobile} {
-      font-size: 18px;
-      line-height: 20px;
+      font-size: 30px;
+      line-height: 37px;
     }
 
     &--upper {
       @media #{$mobile} {
-        width: 296px;
+        min-width: 243px;
+        max-width: 243px;
       }
     }
 
@@ -349,9 +372,10 @@ export default {
       transform: rotate(90deg);
 
       @media #{$mobile} {
-        width: 9px;
-        font-size: 5px;
-        line-height: 6px !important;
+        //width: 9px;
+        margin-left: 9px;
+        font-size: 9px;
+        line-height: 11px !important;
       }
     }
 
@@ -360,8 +384,8 @@ export default {
       line-height: 45px;
 
       @media #{$mobile} {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 30px;
+        line-height: 37px;
       }
     }
   }
@@ -392,24 +416,28 @@ export default {
     }
 
     @media #{$mobile} {
-      width: 162px;
-      height: 12px;
-      font-size: 5px;
-      line-height: 6px;
+      order: 1;
+      width: 243px;
+      height: 33px;
+      font-size: 10px;
+      font-family: Montserrat,sans-serif;
+      line-height: 12px;
       border-radius: 2px;
       background-color: rgba(2, 0, 0, 0.8);
+      text-align: center;
+      padding: 0 40px;
     }
   }
 
   &__mobile-container {
 
     @media #{$mobile} {
-      margin-top: 5px;
+      margin-top: 70px;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 224px;
+      height: 290px;
       position: relative;
 
     }
@@ -421,52 +449,81 @@ export default {
         background-color: #FBB900;
         left: -30%;
         width: 140%;
-        height: 224px;
+        height: 290px;
       }
 
     }
   }
 
   &__mobile-pictures {
-    width: 299px;
-    height: inherit;
-    transform: rotate(15deg);
+    width: 360px;
+    height: 390px;
+    transform: rotate(9deg);
     position: relative;
   }
 
   &__content-mobile {
     object-fit: cover;
     position: absolute;
-    top: 60px;
-    left: 20px;
-    width: 80px;
-    height: 145px;
-    transform: rotate(-19deg);
-    filter: drop-shadow(0px 2px 4px #987510);
+    top: 104px;
+    right: 186px;
+    width: 149px;
+    height: 204px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    & img {
+      width: 80px;
+      height: 145px;
+      transform: rotate(-19deg);
+      filter: drop-shadow(0px 2px 4px #987510);
+    }
   }
 
   &__cover-mobile {
     object-fit: cover;
     position: absolute;
-    top: 38px;
-    right: 157px;
-    width: 74px;
-    height: 136px;
-    transform: rotate(6.21deg);
-    filter: drop-shadow(0px 4px 2px #987510);
+    top: 95px;
+    right: 155px;
+    width: 108px;
+    height: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 74px;
+      height: 136px;
+      transform: rotate(6.21deg);
+    }
   }
 
   &__iphone-mobile {
     object-fit: cover;
     position: absolute;
-    top: 20px;
-    right: 85px;
-    width: 100px;
-    height: 200px;
-    transform: rotate(26.21deg);
+    top: 87px;
+    right: 60px;
+    width: 183px;
+    height: 231px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 112px;
+      height: 198px;
+      transform: rotate(26.21deg);
+      //filter: drop-shadow(0px 2px 4px #987510);
+    }
+
   }
 
   &__phone {
+    @media #{$desktop} {
+
+    }
     position: absolute;
     top: 100px;
     right: 55px;

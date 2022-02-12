@@ -44,7 +44,7 @@ export default {
       }
     },
     setIsMobile() {
-      this.isMobile = window.innerWidth < 990;
+      this.isMobile = window.innerWidth < 1100;
     }
   },
   mounted() {
