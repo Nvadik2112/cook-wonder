@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Закончено выполнение адаптива guide">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/logo.svg" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Начало исправления адаптива">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Cat.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/CatFace.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/CatVision.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Paw.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Phrase.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/assets/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/assets/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -127,7 +131,10 @@
       <workItem from="1643216931256" duration="6251000" />
       <workItem from="1643544243559" duration="22643000" />
       <workItem from="1643975460318" duration="1266000" />
-      <workItem from="1644677370666" duration="8947000" />
+      <workItem from="1644677370666" duration="9725000" />
+      <workItem from="1644757266531" duration="155000" />
+      <workItem from="1644757587211" duration="259000" />
+      <workItem from="1644758802856" duration="10244000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -213,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643561827441</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Начало исправления адаптива">
+      <created>1644692869258</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644692869258</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +270,8 @@
     <MESSAGE value="Адаптированы Слайдер и частично страница продуктов" />
     <MESSAGE value="Адаптирована страница продуктов" />
     <MESSAGE value="Закончено выполнение адаптива guide" />
-    <option name="LAST_COMMIT_MESSAGE" value="Закончено выполнение адаптива guide" />
+    <MESSAGE value="Начало исправления адаптива" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начало исправления адаптива" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

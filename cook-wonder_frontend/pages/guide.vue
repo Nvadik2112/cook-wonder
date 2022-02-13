@@ -64,7 +64,7 @@ export default {
 .guide {
   background-color: #2C2720;
   width: 100%;
-  min-width: 320px;
+  min-width: 360px;
   display: flex;
   justify-content: center;
 

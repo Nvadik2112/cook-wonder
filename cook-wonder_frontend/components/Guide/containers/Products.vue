@@ -186,10 +186,6 @@ export default {
           margin-top: 0;
         }
       }
-
-      & .products__arrow {
-
-      }
     }
 
     &:nth-child(2n) {
