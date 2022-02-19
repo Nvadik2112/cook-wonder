@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{283:function(e,n,t){"use strict";t.r(n);var c={name:"CatVision"},o=t(43),component=Object(o.a)(c,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,"29763e80",null);n.default=component.exports}}]);
