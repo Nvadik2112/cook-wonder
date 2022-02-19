@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Начало исправления адаптива">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Cat.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/CatFace.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/CatVision.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Paw.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Phrase.vue" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Исправлен header">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/content/content_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/content/content_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/content/content_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/content/content_4.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Cat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Cat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Phrase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/UI/Phrase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Carousel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideContent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/pages/guide.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/SvgStore.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/SvgStore.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cook-wonder_frontend/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cook-wonder_frontend/static/content" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\content" />
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static" />
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\footer" />
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\products" />
@@ -134,7 +137,10 @@
       <workItem from="1644677370666" duration="9725000" />
       <workItem from="1644757266531" duration="155000" />
       <workItem from="1644757587211" duration="259000" />
-      <workItem from="1644758802856" duration="10244000" />
+      <workItem from="1644758802856" duration="10982000" />
+      <workItem from="1645257303320" duration="429000" />
+      <workItem from="1645258673791" duration="7668000" />
+      <workItem from="1645292218293" duration="5199000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -227,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644692869258</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Исправлен header">
+      <created>1644772591306</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644772591306</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +284,8 @@
     <MESSAGE value="Адаптирована страница продуктов" />
     <MESSAGE value="Закончено выполнение адаптива guide" />
     <MESSAGE value="Начало исправления адаптива" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало исправления адаптива" />
+    <MESSAGE value="Исправлен header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен header" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

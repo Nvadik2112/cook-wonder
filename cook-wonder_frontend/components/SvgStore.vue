@@ -34,6 +34,12 @@ export default {
         </svg>`
       }
 
+      if (this.name === 'vector-mobile') {
+        return `<svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.9366 1.0001C19.8055 6.56573 7.76271 17.1119 1.63978 33.9626" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      }
+
       if (this.name === 'paw') {
         return `<svg width="215" height="185" viewBox="0 0 215 185" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_647_217" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="215" height="185">

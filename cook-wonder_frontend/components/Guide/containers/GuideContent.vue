@@ -1,16 +1,16 @@
 <template>
   <section class="guide-content">
-    <div class="guide-content__main row">
-      <div v-if="!isMobile" class="guide-content__mask col-6">
+    <div v-if="!isMobile" class="guide-content__main row">
+      <div class="guide-content__mask col-6">
         <div class="guide-content__round"></div>
       </div>
-      <div v-if="!isMobile" class="guide-content__empty col-lg-1"></div>
-      <div v-if="!isMobile" class="guide-content__left col-lg-3">
+      <div class="guide-content__empty col-1"></div>
+      <div class="guide-content__left col-3">
         <img class="guide-content__content" src="content.png" alt="content" draggable="false">
         <img class="guide-content__cover" src="cover.png" alt="cover" draggable="false">
       </div>
-      <div v-if="!isMobile" class="guide-content__empty col-lg-3 col-xl-2"></div>
-      <div class="guide-content__right col-12 col-lg-5 col-xl-6">
+      <div class="guide-content__empty col-2"></div>
+      <div class="guide-content__right col-6">
         <h3 class="guide-content__title">о чем руководство</h3>
         <div class="content-list">
           <div class="content-list__item" v-for="item in contents">
@@ -22,21 +22,39 @@
         </div>
       </div>
     </div>
-    <div class="guide-content__question">
+    <div v-else class="guide-content__main">
+      <div class="content-list">
+        <div class="content-list__item" v-for="item in contents">
+          <div class="content-list__pic">
+            <img :style="{width: item.width, height: item.height}" :src="item.url" alt="pic" draggable="false">
+          </div>
+          <h4 class="content-list__text content-list__text--title">
+            {{item.title}}
+          </h4>
+          <p class="content-list__text">{{item.text}}</p>
+        </div>
+      </div>
+    </div>
+    <SvgStore v-if="isMobile" class="guide-content__vector" name="vector-mobile"></SvgStore>
+    <Phrase v-if="isMobile"></Phrase>
+    <Cat v-if="isMobile"></Cat>
+    <div v-if="!isMobile" class="guide-content__question">
       <p>что внутри</p><span>?</span>
     </div>
     <div v-if="!isMobile" class="guide-content__footer">
       <div class="guide-content__footer-title">можно узнать уже сегодня</div>
-<!--      <div class="guide-content__comma">“</div>-->
+      <!--      <div class="guide-content__comma">“</div>-->
     </div>
   </section>
 </template>
 
 <script>
 import SvgStore from "../../SvgStore";
+import Cat from "../../../components/Guide/UI/Cat"
+import Phrase from "../../../components/Guide/UI/Phrase"
 export default {
   name: "Content",
-  components: {SvgStore},
+  components: {SvgStore, Cat, Phrase},
   props: {
     isMobile: Boolean
   },
@@ -44,13 +62,27 @@ export default {
     return {
       contents: [
         {title: 'Роль и важность маринадов',
-          text: 'Разберем какие маринады подходят к тому или иному виду мяса'},
-        {title: 'Секреты приготовления идеального шашлыка',
-          text: 'Разберем ошибки, совершаемые даже профессиональными поварами'},
-        {title: 'схема разруба',
-          text: 'Разберем виды вырезок, а также наиболее подходящие из них для шашлыка'},
-        {title: 'Пошаговые рецепты шашлыков и маринадов',
-          text: 'В руководство включены классические и авторские рецепты'},
+          text: 'Правильный маринад может спасти даже старое мясо, сделав его нежным и соным',
+          url: 'content/content_1.svg',
+          width: '55px',
+          height: '55px'},
+        {title: 'Ошибаются даже лучшие',
+          text: 'Важно знать ошибки из кулинарной практики, чтобы не совершать их дома  ',
+          url: 'content/content_2.svg',
+          width: '55px',
+          height: '55px',
+        },
+        {title: 'вечная классика',
+          text: 'Проверенные годами и опытом рецептуры',
+          url: 'content/content_3.svg',
+          width: '64px',
+          height: '50px',
+          },
+        {title: 'схемы разруба мяса',
+          text: 'Лучшие виды вырезок для шашлыка',
+          url: 'content/content_4.svg',
+          width: '70px',
+          height: '55px'},
       ]
     }
   },
@@ -67,21 +99,28 @@ export default {
 
   @media #{$mobile} {
     margin-top: 0;
+    padding-bottom: 50px;
     background-color: white;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__main {
     padding: 0;
     margin: 0;
-    height: 750px;
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
-    z-index: 1;
+
+    @media #{$desktop} {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+      z-index: 1;
+      height: 750px;
+    }
 
     @media #{$mobile} {
-      height: 245px;
-      clip-path: initial;
+      height: fit-content;
+      padding: 0 40px;
     }
   }
 
@@ -247,6 +286,15 @@ export default {
     border-top: 2px solid #FED240;
   }
 
+  &__vector {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 240px;
+    right: 22px;
+    z-index: 2;
+  }
+
   &__comma {
     position: absolute;
     top: -20px;
@@ -263,8 +311,6 @@ export default {
     transform: rotate(-20.44deg);
     z-index: 5;
   }
-
-
 }
 .content-list {
   display: grid;
@@ -275,9 +321,9 @@ export default {
   margin-top: 62px;
 
   @media #{$mobile} {
-    margin-top: 28px;
-    grid-column-gap: 18px;
-    grid-row-gap: 29px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 40px;
   }
 
   &__item {
@@ -290,8 +336,19 @@ export default {
 
     @media #{$mobile} {
       align-items: center;
-      height: 61px;
+      height: fit-content;
     }
+  }
+
+  &__pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #2C2720;
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__text {
@@ -304,14 +361,18 @@ export default {
 
     @media #{$mobile} {
       text-align: center;
-      font-size: 9px;
-      font-weight: 400;
-      line-height: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
     }
 
     &--title {
       text-transform: uppercase;
       font-weight: 700;
+
+      @media #{$mobile} {
+        margin-bottom: 15px;
+      }
     }
   }
 }

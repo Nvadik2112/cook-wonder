@@ -95,7 +95,7 @@ export default {
   @media #{$mobile} {
     display: flex;
     align-items: flex-end;
-    height: 700px;
+    height: 684px;
     justify-content: center;
     clip-path: initial;
   }
@@ -280,6 +280,7 @@ export default {
 
     @media #{$mobile} {
       font-family: Montserrat;
+      margin-top: 5px;
       font-style: normal;
       font-weight: 500;
       font-size: 13px;

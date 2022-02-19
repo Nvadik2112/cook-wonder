@@ -1,5 +1,6 @@
 <template>
   <section class="carousel">
+    <div v-if="isMobile" class="carousel__title">Что внутри?</div>
     <div class="slider">
       <img v-if="!isMobile" class="slider__pic slider__pic--side"
            :src="list[prevKey].url">
@@ -7,20 +8,25 @@
         <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301 0.46875 15.0312C0.46875
           23.3324 7.19885 30.0625 15.5 30.0625C23.8012 30.0625 30.5312 23.3324 30.5312 15.0312ZM12.3203
-          7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
+          7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="white"/>
         </svg>
       </button>
-      <img ref="slide" class="slider__pic slider__pic--center" :src="list[key].url"
+      <img ref="slide" class="slider__pic slider__pic--center" :src="list[currentKey].url"
            @touchstart="touchStart">
       <button v-if="!isMobile" @click="clickNext" class="slider__arrow slider__arrow--next">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="white" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.5312 15.0312C30.5312 6.7301 23.8012 0 15.5 0C7.19885 0 0.46875 6.7301
            0.46875 15.0312C0.46875 23.3324 7.19885 30.0625 15.5 30.0625C23.8012 30.0625 30.5312
-           23.3324 30.5312 15.0312ZM12.3203 7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="#FBB900"/>
+           23.3324 30.5312 15.0312ZM12.3203 7.20705L21.7213 15.0312L12.3203 22.8554V7.20705Z" fill="white"/>
         </svg>
       </button>
       <img v-if="!isMobile" class="slider__pic slider__pic--side"
            :src="list[nextKey].url">
+    </div>
+    <div v-if="isMobile" class="dots">
+      <div v-for="(item, k) in list" :key="k" class="dots__item" :class="{'dots__item--active': currentKey === k}"></div>
+    </div>
+    <div v-if="isMobile" class="carousel__title carousel__title--yellow">оснорожно Преступно вкусно
     </div>
   </section>
 </template>
@@ -35,9 +41,9 @@ export default {
   },
   data() {
     return {
-      prevKey: 0,
-      key: 1,
-      nextKey: 2,
+      prevKey: null,
+      currentKey: 0,
+      nextKey: 1,
       opacity: 0.1,
       y: null,
       list: [
@@ -78,7 +84,7 @@ export default {
     clickNext() {
       this.$refs.slide.style.opacity = `0.3`
       setTimeout(()=> {
-        this.key = this.nextKey
+        this.currentKey = this.nextKey
           this.prevKey === this.list.length - 1 ? this.prevKey = 0 : this.prevKey = this.prevKey + 1
           this.nextKey === this.list.length - 1 ? this.nextKey = 0 : this.nextKey = this.nextKey + 1
           this.$refs.slide.removeAttribute('style')
@@ -89,12 +95,15 @@ export default {
     clickPrev() {
       this.$refs.slide.style.opacity = `0.3`
       setTimeout(()=> {
-        this.key = this.prevKey
+        this.currentKey = this.prevKey
         this.nextKey === 0 ? this.nextKey = this.list.length - 1 : this.nextKey = this.nextKey - 1
         this.prevKey === 0 ? this.prevKey = this.list.length - 1 : this.prevKey = this.prevKey - 1
         this.$refs.slide.removeAttribute('style')
       }, 400)
     }
+  },
+  created() {
+    this.prevKey = this.list.length - 1
   }
 }
 </script>
@@ -105,11 +114,13 @@ export default {
   width: 100%;
   padding-bottom: 44px;
 
-
   @media #{$mobile} {
     background: white;
     position: relative;
-    padding-bottom: 145px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &:before {
@@ -117,11 +128,39 @@ export default {
       content: '';
       position: absolute;
       background-color: #2C2720;
-      top: 35px;
+      top: 75px;
       left: -30%;
       width: 150%;
-      height: 490px;
+      height: 540px;
       transform: rotate(8deg);
+    }
+  }
+
+  &__title {
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    border-radius: 78px;
+    left: calc(50% - 78px);
+    background-color: #2C2720;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: {
+      family: Montserrat, sans-serif;
+      size: 17px;
+      weight: 700;
+    }
+    line-height: 21px;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(12deg);
+
+    &--yellow {
+      background-color: #FBB900;
+      bottom: 60px;
+      color: #000000;
+      text-align: center;
     }
   }
 }
@@ -134,7 +173,7 @@ export default {
 
   @media #{$mobile} {
     justify-content: center;
-    padding-top: 82px;
+    padding-top: 122px;
   }
 
   &__pic {
@@ -157,7 +196,6 @@ export default {
       transition: opacity 0.4s cubic-bezier(0, 0, 0.7, 1);
 
       @media #{$mobile} {
-        margin-top: 20px;
         background-size: 220px 366px;
         width: 220px;
         height: 366px;
@@ -179,6 +217,29 @@ export default {
 
     &--prev {
       transform: rotate(180deg);
+    }
+  }
+}
+
+.dots {
+  display: grid;
+  grid-auto-flow: column;
+  height: 5px;
+  width: fit-content;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 5px);
+  margin-top: 21px;
+  z-index: 5;
+
+  &__item {
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #999595;
+    transition: background-color 0.2s cubic-bezier(0, 0, 0.7, 1);
+
+    &--active {
+      background-color: white;
     }
   }
 }
