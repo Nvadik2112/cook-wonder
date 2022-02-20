@@ -446,7 +446,7 @@ export default {
     object-fit: cover;
     position: absolute;
     top: 100px;
-    left: 20px;
+    left: 40px;
     width: 149px;
     height: 204px;
     display: flex;
@@ -484,7 +484,7 @@ export default {
     object-fit: cover;
     position: absolute;
     top: 77px;
-    right: 10px;
+    right: 40px;
     width: 183px;
     height: 231px;
     display: flex;

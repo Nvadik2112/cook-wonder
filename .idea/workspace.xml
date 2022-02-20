@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Исправлены текст с соным на сочный">
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Масштабированы картинки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/components/Guide/containers/GuideHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_frontend/static/phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_frontend/static/phone.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,7 @@
       <workItem from="1645258673791" duration="7668000" />
       <workItem from="1645292218293" duration="5532000" />
       <workItem from="1645297883507" duration="1071000" />
-      <workItem from="1645354073062" duration="1529000" />
+      <workItem from="1645354073062" duration="2308000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -248,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645298437601</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Масштабированы картинки">
+      <created>1645355750427</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1645355750427</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +301,8 @@
     <MESSAGE value="Исправлен header" />
     <MESSAGE value="Исправлены container и carousel" />
     <MESSAGE value="Исправлены текст с соным на сочный" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправлены текст с соным на сочный" />
+    <MESSAGE value="Масштабированы картинки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Масштабированы картинки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
