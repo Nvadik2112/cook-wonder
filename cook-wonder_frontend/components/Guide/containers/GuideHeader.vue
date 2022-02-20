@@ -246,7 +246,7 @@ export default {
         width: 75px;
         height: 53px;
         top: 175px;
-        right: 41px;
+        right: 31px;
       }
 
       & h3 {
@@ -446,7 +446,7 @@ export default {
     object-fit: cover;
     position: absolute;
     top: 100px;
-    left: 35px;
+    left: 20px;
     width: 149px;
     height: 204px;
     display: flex;
@@ -454,9 +454,10 @@ export default {
     justify-content: center;
 
     & img {
+      z-index: 2;
       width: 94px;
       height: 172px;
-      transform: rotate(-19deg);
+      transform: rotate(-19deg) scale(1.2);
     }
   }
 
@@ -472,9 +473,10 @@ export default {
     justify-content: center;
 
     & img {
+      z-index: 2;
       width: 85px;
       height: 161px;
-      transform: rotate(6.21deg);
+      transform: rotate(6.21deg) scale(1.2);
     }
   }
 
@@ -482,7 +484,7 @@ export default {
     object-fit: cover;
     position: absolute;
     top: 77px;
-    right: 30px;
+    right: 10px;
     width: 183px;
     height: 231px;
     display: flex;
@@ -491,18 +493,16 @@ export default {
 
     & img {
       z-index: 2;
-      width: 120px;
-      height: 218px;
-      transform: rotate(26.21deg);
+      height: 200px;
+      transform: rotate(26.21deg) scale(1.2);
     }
   }
 
   &__phone {
     position: absolute;
-    top: 100px;
-    right: 55px;
-    width: 291px;
-    height: 516px;
+    top: 170px;
+    right: 90px;
+    height: 450px;
     transform: rotate(26.21deg);
   }
 
