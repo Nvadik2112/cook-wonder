@@ -8,7 +8,7 @@
     <div v-if="!isMobile" class="guide-header__mask col-5">
       <div class="guide-header__round"></div>
     </div>
-    <button class="guide-header__button">
+    <button v-if="isMobile" class="guide-header__button">
       <Shape class="guide-header__button-shape">
         <h3 class="guide-header__personal-text">Меню</h3>
       </Shape>
@@ -21,8 +21,8 @@
       </span>
       <div class="guide-header__container-lower">
         <div class="guide-header__slang">Это мощно. Это сочно. Это cookwonder</div>
-        <span class="guide-header__title guide-header__title--pre">про</span>
-        <span class="guide-header__title guide-header__title--main">шашлыки</span>
+        <span class="guide-header__title guide-header__title--pre">о</span>
+        <span class="guide-header__title guide-header__title--main">шашлыках</span>
       </div>
       <div v-if="isMobile" class="guide-header__mobile-container">
 <!--        <SvgStore class="guide-header__vector guide-header__vector&#45;&#45;mobile" name="vector"></SvgStore>-->
@@ -313,9 +313,10 @@ export default {
       align-items: center;
 
       @media #{$mobile} {
+        margin-left: 15px;
         flex-direction: row;
-        min-width: 243px;
-        max-width: 243px;
+        min-width: 250px;
+        max-width: 250px;
         flex-wrap: wrap;
 
       }
@@ -339,29 +340,38 @@ export default {
     }
 
     &--upper {
+      @media #{$desktop} {
+        letter-spacing: 0.015em;
+      }
+
       @media #{$mobile} {
-        min-width: 243px;
-        max-width: 243px;
+        margin-left: 15px;
+        min-width: 250px;
+        max-width: 250px;
+        letter-spacing: -0.01em;
       }
     }
 
     &--pre {
-      font-size: 17px;
-      line-height: 21px;
-      transform: rotate(90deg);
+      margin-left: 5px;
+      font-size: 27px;
+      line-height: 31px;
+      //transform: rotate(90deg);
 
       @media #{$mobile} {
-        //width: 9px;
-        transform: rotate(-90deg);
+        width: 24px;
+        //transform: rotate(-90deg);
         margin-left: 9px;
-        font-size: 9px;
-        line-height: 11px !important;
+        margin-right: 0;
+        font-size: 20px;
+        line-height: 24px !important;
       }
     }
 
     &--main {
       font-size: 55px;
       line-height: 45px;
+      letter-spacing: -0.02em;
 
       @media #{$mobile} {
         font-size: 30px;

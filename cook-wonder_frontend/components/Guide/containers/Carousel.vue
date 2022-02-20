@@ -26,7 +26,7 @@
     <div v-if="isMobile" class="dots">
       <div v-for="(item, k) in list" :key="k" class="dots__item" :class="{'dots__item--active': currentKey === k}"></div>
     </div>
-    <div v-if="isMobile" class="carousel__title carousel__title--yellow">оснорожно Преступно вкусно
+    <div v-if="isMobile" class="carousel__title carousel__title--yellow">Преступно вкусно!
     </div>
   </section>
 </template>
