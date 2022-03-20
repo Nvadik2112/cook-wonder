@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Инициазилизация docker контайнер mongo">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_02_2022_14_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_02_2022_14_53__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Фикс">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/main/main.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/app.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/nest-cli.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/test/app.e2e-spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\products" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start:dev">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
       <command value="run" />
@@ -147,6 +149,8 @@
         <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +195,7 @@
       <workItem from="1647704534899" duration="2409000" />
       <workItem from="1647712802443" duration="2841000" />
       <workItem from="1647715896093" duration="860000" />
+      <workItem from="1647793570067" duration="1334000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
