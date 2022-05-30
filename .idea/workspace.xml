@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Создан контроллер Contacts">
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Создан контроллер Guide">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.turtle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTigerHS.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-0-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-2-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-4-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-7-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.2022-03-19T18-19-33Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.2022-03-19T18-19-55Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-1-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-3-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-5-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-6-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-8-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-9-9063611911395846402.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerLog.0000000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/mongod.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/sizeStorer.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/storage.bson" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +97,20 @@
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\footer" />
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\products" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\cook-wonder" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
       <command value="run" />
@@ -136,6 +172,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="npm.deploy" />
       <item itemvalue="npm.dev" />
       <item itemvalue="npm.generate" />
@@ -145,11 +182,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.start:dev" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +233,9 @@
       <workItem from="1647715896093" duration="860000" />
       <workItem from="1647793570067" duration="1334000" />
       <workItem from="1651672792750" duration="9626000" />
-      <workItem from="1653928968401" duration="2652000" />
+      <workItem from="1653928968401" duration="4424000" />
+      <workItem from="1653934429429" duration="868000" />
+      <workItem from="1653935344649" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -352,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651691221369</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Создан контроллер Guide">
+      <created>1653932680069</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1653932680069</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +451,8 @@
     <MESSAGE value="Инициазилизация docker контайнер mongo" />
     <MESSAGE value="Создан контроллер Auth" />
     <MESSAGE value="Создан контроллер Contacts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан контроллер Contacts" />
+    <MESSAGE value="Создан контроллер Guide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан контроллер Guide" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
