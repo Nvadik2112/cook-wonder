@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Создан контроллер Auth">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.controller.ts" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Создан контроллер Contacts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,8 @@
       <workItem from="1647712802443" duration="2841000" />
       <workItem from="1647715896093" duration="860000" />
       <workItem from="1647793570067" duration="1334000" />
-      <workItem from="1651672792750" duration="9237000" />
+      <workItem from="1651672792750" duration="9626000" />
+      <workItem from="1653928968401" duration="2652000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -347,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651068524230</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Создан контроллер Contacts">
+      <created>1651691221369</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651691221369</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +404,8 @@
     <MESSAGE value="Закончено исправление адаптива" />
     <MESSAGE value="Инициазилизация docker контайнер mongo" />
     <MESSAGE value="Создан контроллер Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан контроллер Auth" />
+    <MESSAGE value="Создан контроллер Contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан контроллер Contacts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
