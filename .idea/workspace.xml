@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Создан контроллер Guide">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.controller.ts" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="add">
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/configs/mongo.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-0--1503163802946450888.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-34-02Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-35-27Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-31T05-56-11Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T12-29-38Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T12-30-21Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T17-56-08Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T18-13-03Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/index-1--1503163802946450888.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/index-2--1503163802946450888.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000011" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.turtle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTigerHS.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/_mdb_catalog.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-0-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-2-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-4-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-7-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.2022-03-19T18-19-33Z-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.2022-03-19T18-19-55Z-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-1-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-3-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-5-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-6-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-8-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-9-9063611911395846402.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerLog.0000000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/mongod.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/sizeStorer.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/storage.bson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/guide/guide.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-31-01Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-31-01Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +66,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/cook-wonder_backend/src/auth/auth.model.ts" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="21pjkmmHRalMSv5405CxzfRoZ5s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -74,6 +89,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedtslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cook-wonder_backend" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -85,7 +101,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="C:\projects\cook-wonder\cook-wonder_backend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -101,7 +117,7 @@
       <recent name="C:\projects\cook-wonder" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="npm.start">
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -109,6 +125,16 @@
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -161,11 +187,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start:dev" />
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -178,15 +204,15 @@
       <item itemvalue="npm.generate" />
       <item itemvalue="npm.lint" />
       <item itemvalue="npm.build" />
-      <item itemvalue="npm.start:dev" />
+      <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +261,11 @@
       <workItem from="1651672792750" duration="9626000" />
       <workItem from="1653928968401" duration="4424000" />
       <workItem from="1653934429429" duration="868000" />
-      <workItem from="1653935344649" duration="18000" />
+      <workItem from="1653935344649" duration="318000" />
+      <workItem from="1654150276960" duration="12000" />
+      <workItem from="1655036931148" duration="5180000" />
+      <workItem from="1655055626634" duration="3872000" />
+      <workItem from="1655059548912" duration="3507000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -398,7 +428,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653932680069</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="база данных mongo и docker-compose.yml вынесены в общую папку">
+      <created>1653935568488</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1653935568488</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add">
+      <created>1653935608847</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1653935608847</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +496,9 @@
     <MESSAGE value="Создан контроллер Auth" />
     <MESSAGE value="Создан контроллер Contacts" />
     <MESSAGE value="Создан контроллер Guide" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан контроллер Guide" />
+    <MESSAGE value="база данных mongo и docker-compose.yml вынесены в общую папку" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
