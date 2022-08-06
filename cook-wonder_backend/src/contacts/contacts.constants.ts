@@ -1,0 +1,1 @@
+export const SOCIAL_NOT_FOUND = 'Соцсеть с таким не найдено';

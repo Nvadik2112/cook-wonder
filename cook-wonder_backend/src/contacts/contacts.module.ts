@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ContactsController } from './contacts.controller';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { ContactsModel } from './contacts.model';
+import { ContactsService } from './contacts.service';
 
 @Module({
   controllers: [ContactsController],
@@ -15,5 +16,6 @@ import { ContactsModel } from './contacts.model';
       },
     ]),
   ],
+  providers: [ContactsService],
 })
 export class ContactsModule {}
