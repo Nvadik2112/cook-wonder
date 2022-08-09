@@ -1,9 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import {Get, HttpException, HttpStatus, Injectable} from '@nestjs/common';
 import {InjectModel} from 'nestjs-typegoose';
 import {ContactsModel} from './contacts.model';
 import {ModelType, DocumentType} from '@typegoose/typegoose/lib/types';
-import {CreateSocialsDto} from './dto/create-socials';
+import {CreateContactsDto} from './dto/create-contacts';
 import {Types} from 'mongoose';
+import {DATA_IS_EXIST} from './contacts.constants';
 
 
 @Injectable()
@@ -11,17 +12,23 @@ export class ContactsService {
 	constructor(@InjectModel(ContactsModel)
 				private readonly contactsModel: ModelType<ContactsModel>) {}
 
-	async setSocial(dto: CreateSocialsDto): Promise<DocumentType<ContactsModel['socialNetworks']>> {
-		return this.contactsModel['socialNetworks'].create(dto);
+	async create(dto: CreateContactsDto): Promise<DocumentType<ContactsModel>> {
+		const finder = await this.contactsModel.find();
+		if (finder.length === 0) {
+			return this.contactsModel.create(dto);
+		} else
+		{ throw new HttpException( DATA_IS_EXIST, HttpStatus.OK); }
 	}
 
-	async deleteSocial(id: string): Promise<DocumentType<ContactsModel['socialNetworks']> | null> {
-		return this.contactsModel['socialNetworks'].findByIdAndDelete(id).exec();
+	async update(dto: CreateContactsDto): Promise<DocumentType<ContactsModel>> {
+		return this.contactsModel.findOneAndUpdate( { }, dto, {new: true} ).exec();
 	}
 
-	async getSocial(socialId: string): Promise<DocumentType<ContactsModel['socialNetworks']>> {
-		return this.contactsModel['socialNetworks']
-			.findOne({socialId: new Types.ObjectId(socialId) }).exec();
+	async find(): Promise<DocumentType<ContactsModel>> {
+		return this.contactsModel.findOne();
 	}
 
+	async delete()  {
+		await this.contactsModel.deleteOne();
+	}
 }

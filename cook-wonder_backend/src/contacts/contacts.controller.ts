@@ -5,46 +5,34 @@ import {
   Get, HttpCode, HttpException, HttpStatus,
   Param,
   Patch,
-  Post,
+  Post, Put,
 } from '@nestjs/common';
 import { ContactsModel } from './contacts.model';
-import { CreateSocialsDto } from './dto/create-socials';
+import { CreateContactsDto } from './dto/create-contacts';
 import { ContactsService } from './contacts.service';
 import {SOCIAL_NOT_FOUND} from './contacts.constants';
 
 @Controller('contacts')
 export class ContactsController {
-  constructor(private readonly contactsService: ContactsService) {
+  constructor(private readonly contactsService: ContactsService) {}
+
+  @Post()
+  async create(@Body() dto: CreateContactsDto) {
+    return this.contactsService.create(dto);
   }
-
-  @Post('create')
-  async create(@Body() dto: ContactsModel) {}
-
-  @Get()
-  async get() {}
-
-  @Delete()
-  async delete() {}
 
   @Patch()
-  async patch(@Body() dto: ContactsModel) {}
-
-  @Post('createSocials')
-  async setSocial(@Body() dto: CreateSocialsDto) {
-    await this.contactsService.setSocial(dto);
+  async update(@Body() dto: CreateContactsDto) {
+    return this.contactsService.update(dto);
   }
 
-  @Get('socials/:id')
-  async getSocial(@Param('id') id: string) {
-    await this.contactsService.getSocial(id);
+  @Get()
+  async find() {
+    return this.contactsService.find();
   }
 
-  @Delete('socials/:id')
-  async deleteSocial(@Param('id') id: string) {
-    const deleted = await this.contactsService.deleteSocial(id);
-
-    if (!deleted) {
-      throw new HttpException(SOCIAL_NOT_FOUND, HttpStatus.NOT_FOUND);
-    }
+  @Delete()
+  async delete() {
+    return this.contactsService.delete();
   }
 }

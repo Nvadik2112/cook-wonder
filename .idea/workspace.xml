@@ -1,34 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Подключен проект к БД Mongo, связаны модели с typegoose">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/dto/create-socials.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T15-37-16Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000013" afterDir="false" />
+    <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Создан сервис для контактов (а именно работа с соцсетями)">
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T17-30-30Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T17-54-51Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-09-39Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-23-38Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-27-10Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-52-13Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-26-31Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-31-06Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-33-54Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-40-39Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-51-12Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-51-24Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T20-07-52Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T20-38-50Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-09T16-18-49Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-09T19-52-48Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000030" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/dto/create-socials.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/dto/create-contacts.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-4-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-4-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-5--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-5--1503163802946450888.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T18-13-03Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T18-13-03Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T15-37-16Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T15-37-16Z-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-5-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-5-4914234407313145273.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-6--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-6--1503163802946450888.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-6-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-6-4914234407313145273.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000011" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000013" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +58,7 @@
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
         <option value="TypeScript File" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -255,7 +272,9 @@
       <workItem from="1655055626634" duration="3872000" />
       <workItem from="1655059548912" duration="3859000" />
       <workItem from="1655791923286" duration="2000" />
-      <workItem from="1659782253538" duration="14742000" />
+      <workItem from="1659782253538" duration="16020000" />
+      <workItem from="1659807028807" duration="13917000" />
+      <workItem from="1660061904116" duration="18849000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
@@ -439,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655063334801</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Создан сервис для контактов (а именно работа с соцсетями)">
+      <created>1659802078853</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1659802078853</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Вн" />
     <MESSAGE value="ss" />
     <MESSAGE value="Переделана страница О чем руководство и слайдер" />
     <MESSAGE value="Сделан шаблон раздела Products" />
@@ -495,7 +520,8 @@
     <MESSAGE value="база данных mongo и docker-compose.yml вынесены в общую папку" />
     <MESSAGE value="add" />
     <MESSAGE value="Подключен проект к БД Mongo, связаны модели с typegoose" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключен проект к БД Mongo, связаны модели с typegoose" />
+    <MESSAGE value="Создан сервис для контактов (а именно работа с соцсетями)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан сервис для контактов (а именно работа с соцсетями)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
