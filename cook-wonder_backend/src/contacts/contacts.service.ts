@@ -29,6 +29,6 @@ export class ContactsService {
 	}
 
 	async delete()  {
-		await this.contactsModel.deleteOne();
+		return this.contactsModel.deleteOne();
 	}
 }

@@ -3,6 +3,7 @@ import { ContactsController } from './contacts.controller';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { ContactsModel } from './contacts.model';
 import { ContactsService } from './contacts.service';
+import { SocialsModule } from './socials/socials.module';
 
 @Module({
   controllers: [ContactsController],
@@ -15,6 +16,7 @@ import { ContactsService } from './contacts.service';
         },
       },
     ]),
+    SocialsModule,
   ],
   providers: [ContactsService],
 })
