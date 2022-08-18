@@ -2,41 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038f321e-b87d-4982-ac9a-73ccb42c5a7d" name="Default Changelist" comment="Настроен сервис контактов (за исключением вложенностей)">
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/socials/dto/create-socials.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/socials/socials.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/socials/socials.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/socials/socials.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/socials/socials.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/socials/socials.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-09T21-30-54Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T17-44-42Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T17-56-02Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T17-57-04Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T18-12-29Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T18-15-10Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-2--4905370220515447045.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-4--4905370220515447045.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.2022-08-18T18-02-10Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.2022-08-18T18-02-41Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/diagnostic.data/metrics.interim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-5--4905370220515447045.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-6--4905370220515447045.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-7--681850761167996633.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-8--4905370220515447045.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-8--681850761167996633.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerLog.0000000002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/mongod.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/contacts.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/dto/create-contacts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/src/contacts/dto/create-contacts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-4-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-4-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-5--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-5--1503163802946450888.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-5-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-5-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-6--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-6--1503163802946450888.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-6-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-6-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerLog.0000000030" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cook-wonder_backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/WiredTigerHS.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/WiredTigerHS.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-0--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-0--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-0-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-7--4905370220515447045.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-2-4914234407313145273.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-3--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-4--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-4-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-3--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-5--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-2--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/collection-7-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/_mdb_catalog.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-30-05Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-30-22Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-31-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-34-02Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-30T18-35-27Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-05-31T05-56-11Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T12-29-38Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T12-30-21Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T17-56-08Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-06-12T18-13-03Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T15-37-16Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T17-30-30Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T17-54-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-09-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-23-38Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-27-10Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T18-52-13Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-26-31Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-31-06Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-33-54Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-40-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-51-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T19-51-24Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T20-07-52Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-06T20-38-50Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-09T16-18-49Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-09T19-52-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-09T21-30-54Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T17-44-42Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T17-56-02Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T17-57-04Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T18-12-29Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.2022-08-16T18-15-10Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/diagnostic.data/metrics.interim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-1--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-6--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-1-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/collection-0--4905370220515447045.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-2--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-1--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-3-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-3--4905370220515447045.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-4--1503163802946450888.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-5--681850761167996633.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-5-4914234407313145273.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-6--1503163802946450888.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-6-4914234407313145273.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-8-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-9--4905370220515447045.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/index-9-4914234407313145273.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/index-1--4905370220515447045.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerPreplog.0000000001" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerPreplog.0000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/journal/WiredTigerPreplog.0000000002" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/journal/WiredTigerPreplog.0000000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-data-4.4/storage.bson" beforeDir="false" afterPath="$PROJECT_DIR$/cook-wonder_backend/mongo-data-4.4/storage.bson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,19 +157,11 @@
       <recent name="C:\projects\cook-wonder\cook-wonder_frontend\static\products" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\cook-wonder\cook-wonder_backend" />
       <recent name="C:\projects\cook-wonder" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
       <command value="run" />
@@ -184,6 +222,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="prebuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prebuild" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
       <command value="run" />
@@ -194,22 +242,33 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/cook-wonder_backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="npm.deploy" />
       <item itemvalue="npm.dev" />
       <item itemvalue="npm.generate" />
       <item itemvalue="npm.lint" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.start" />
+      <item itemvalue="npm.start:dev" />
+      <item itemvalue="npm.prebuild" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.prebuild" />
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -269,6 +328,10 @@
       <workItem from="1660061904116" duration="19221000" />
       <workItem from="1660081992634" duration="382000" />
       <workItem from="1660671814551" duration="6969000" />
+      <workItem from="1660842139879" duration="1820000" />
+      <workItem from="1660844011116" duration="746000" />
+      <workItem from="1660844786797" duration="209000" />
+      <workItem from="1660845050340" duration="2099000" />
     </task>
     <task id="LOCAL-00001" summary="Внесены правки на странице guide в первом разделе">
       <created>1638649510653</created>
